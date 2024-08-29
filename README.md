@@ -1,12 +1,14 @@
 # Formulário com Validações em JavaScript Puro
 
+Status: Desenvolvedor ⚠️
+
 Bem-vindo ao repositório do Formulário com Validações! Este projeto demonstra a criação de um formulário de registro em HTML com validações realizadas em JavaScript puro. As validações são implementadas utilizando expressões regulares (regex) para garantir que os dados inseridos estejam no formato correto.
 
 ## Tecnologias Utilizadas
 
-HTML
-CSS
-JavaScript
+- **HTML**
+- **CSS**
+- **JavaScript**
 
 ## Funcionalidades
 
