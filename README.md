@@ -14,22 +14,22 @@ Bem-vindo ao repositório do Formulário com Validações! Este projeto demonstr
 
 O formulário inclui os seguintes campos, cada campo possui validações especificas além de utilizarem regex exceto o campo senha:
 
-Nome Completo: Não deve conter caracteres de números ou caracteres especiais.
-Email: Deve estar no formato de um email válido (ex: exemplo@dominio.com) e não pode estar em branco.
-Senha: Deve ter pelo menos 7 caracteres.
-Confirmar Senha: Deve corresponder à senha digitada.
-Telefone: Deve estar no formato de número de telefone válido (ex: (99) 99999-9999) e o campo não pode ficar em branco.
-Data de Nascimento: Deve estar no formato de data válido (ex: 01/01/2000) e o campo não pode ficar em branco.
+- **Nome Completo:** Não deve conter caracteres de números ou caracteres especiais.
+- **Email:** Deve estar no formato de um email válido (ex: exemplo@dominio.com) e não pode estar em branco.
+- **Senha:** Deve ter pelo menos 7 caracteres.
+- **Confirmar Senha:** Deve corresponder à senha digitada.
+- **Telefone:** Deve estar no formato de número de telefone válido (ex: (99) 99999-9999) e o campo não pode ficar em branco.
+- **Data de Nascimento:** Deve estar no formato de data válido (ex: 01/01/2000) e o campo não pode ficar em branco.
 
 
 ## Estrutura do Repositório
 O repositório está organizado da seguinte maneira:
 
-/css: Contém o arquivo style.css para estilização do formulário.
-/images: Contém as imagens do projeto.
-/js: Cóntem a parte logica do projeto como as validações.
-index.html: Contém o esqueleto do formulário.
-README.md: Este arquivo.
+- **/css:** Contém o arquivo style.css para estilização do formulário.
+- **/images:** Contém as imagens do projeto.
+- **/js:** Cóntem a parte logica do projeto como as validações.
+- **index.html:** Contém o esqueleto do formulário.
+- **README.md:** Este arquivo.
 
 ## Como Executar
 
