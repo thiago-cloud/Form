@@ -11,7 +11,6 @@
     <title>Formulário Personalizado</title>
 </head>
 <body>
-    
     <section class="form-container">
         <div class="container">
             <form id="form" class="form">
@@ -31,12 +30,12 @@
                     <i class="fa-solid fa-circle-check"></i><br><!--icone de sucesso-->
                     <small></small><!--Mensagem de erro-->
                 </div>
-                <div class="input-single" id="item">
+                    <div class="input-single" id="item">
                     <input class="input" type="text" id="dataNascimento" name="dataNascimento" placeholder="ex: dd/mm/aaaa"/>
                     <label for="dataNascimento">Sua data de nascimento:</label>
                     <i class="fa-solid fa-circle-exclamation"></i><!--icone de erro-->
                     <i class="fa-solid fa-circle-check"></i><br><!--icone de sucesso-->
-                    <small></small><!--Mensagem de erro-->
+                    <small style="text-align: center;"></small><!--Mensagem de erro-->
                 </div>
                 <div class="input-single" id="item">
                     <input class="input" type="text" id="telefone" name="telefone" placeholder="ex: (81) 97777-7777"/>
@@ -45,15 +44,6 @@
                     <i class="fa-solid fa-circle-check"></i><br><!--icone de sucesso-->
                     <small></small><!--Mensagem de erro-->
                 </div>
-                <div class="input-single ">
-                    <select class="form-control">
-                        <option value="masculino">Masculino</option>
-                        <option value="feminino">Feminino</option>
-                        <option value="outro">Não Binario</option>
-                        <option value="prefiroNaoInformar">Prefiro não informar</option>
-                    </select>
-                    <label for="genero" id="genero">Gênero:</label>
-                </div>  
                 <div class="input-single" id="item">
                     <input class="input" type="password" id="senha" name="senha" placeholder="ex: 4538@#TT" />
                     <label for="senha">Senha:</label>
@@ -66,16 +56,18 @@
                     <label for="confirmar-senha">Confrimar Senha:</label>
                     <i class="fa-solid fa-circle-exclamation"></i><!--icone de erro-->
                     <i class="fa-solid fa-circle-check"></i><br><!--icone de sucesso-->
-                    <small></small><!--Mensagem de erro-->
+                    <small style="text-align: center"></small><!--Mensagem de erro-->
                 </div>
-                    <div class="input-single" id="item" style="text-align: center;">
-                        <input type="checkbox" id="checkbox" name="checkbox">
-                        <label for="checkbox" id="checkbox-label">Aceitar os <a href="#">termos e condições.</a></label>
-                        <i class="fa-solid fa-circle-exclamation"></i>
-                        <small id="checkbox-small"></small><!--Mensagem de erro-->
-                    </div>
+                <div class="input-single" id="item" style="text-align: center;">
+                    <input type="checkbox" id="checkbox" name="checkbox">
+                    <label for="checkbox" id="checkbox-label">Aceitar os <a href="#">termos e condições.</a></label>
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <small id="checkbox-small"></small><!--Mensagem de erro-->
+                </div>
                     <!--<div id="mensagemErro">Você deve aceitar os termos e condições.</div>-->
-                <div class="btn"><input type="submit" value="Enviar" id="btn-enviar"></div>
+                <div class="btn">
+                    <input type="submit" value="Enviar" id="btn-enviar">
+                </div>
             </form>
         </div>
     </section>

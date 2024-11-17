@@ -1,18 +1,15 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');*/
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&family=Sometype+Mono&display=swap');
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Sometype Mono', monospace;
 }
 
-body{
-    width: 100%;
-    height: 100vh;
-    background-image: url(/images/wallpaperMundo.jpg);
+body {
+    width: 100vw;
+    max-height: 250vh;
+    background-image: url(/Forms/images/wallpaperMundo.webp);
+    background-color: #2ecc71;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -21,65 +18,60 @@ body{
     justify-content: center;
 }
 
-.container{
-    max-width: 1280px;
+.container {
+    max-width: 2000px;
     margin: 0 auto;
     padding: 6%;
 }
 
-form{
+form {
     background: #fff;
-    width:530px;
-    height: 890px;
+    width: 100%;
+    max-width: 530px;
     padding: 40px;
     border-radius: 20px;
     opacity: 0.9;
 }
 
-form h1{
+form h1 {
     text-align: center;
     margin-bottom: 10px;
     color: #2D5966;
     font-size: 22pt;
 }
 
-form p{
+form p {
     text-align: center;
     margin-bottom: 40px;
 }
 
-form .input-single{
+.input-single {
     position: relative;
     margin: 20px 0;
     height: 65px;
 }
 
 .input-single i {
-    position:absolute;
-    right:10px;
+    position: absolute;
+    right: 10px;
     bottom: 40px;
     visibility: hidden;
     font-size: 20px;
-  }
+}
 
-  .input-single small{
+.input-single small {
     visibility: hidden;
-  }
+}
 
-form .input-single label{
+.input-single label {
     position: relative;
     left: 0;
     bottom: 55px;
     cursor: text;
-    /*transition: all 0.5s;*/
     color: #808080;
 }
 
-form .input-single .label-data{
-    opacity: 0;
-}
-
-form .input-single .input{
+.input-single .input {
     width: 100%;
     border: 0;
     border-bottom: 2px solid #808080;
@@ -88,27 +80,73 @@ form .input-single .input{
     font-size: 18px;
 }
 
-form .input-single .input:focus{
+.input-single .input:focus {
     border-bottom: 2px solid #2D5966;
 }
 
-form .input-single .input ~ label,
-form .input-single .input ~ label{
+.input-single.success input {
+    border-bottom: 2px solid #2ecc71;
+}
+
+.input-single.error input {
+    border-bottom: 2px solid #e74c3c;
+}
+
+.input-single.success i.fa-circle-check {
+    color: #2ecc71;
+    visibility: visible;
+}
+
+.input-single.error i.fa-circle-exclamation {
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.input-single.error small {
+    visibility: visible;
+    color: #e74c3c;
+    position: relative;
+    top: -35px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+#genero {
     font-size: 18px;
+    position: absolute;
+    bottom: 50px;
     color: #2D5966;
 }
 
-.btn{
+.form-control {
+    cursor: pointer;
+    position: absolute;
+    bottom: 15px;
+}
+
+#checkbox {
+    position: relative;
+    bottom: 15px;
+    font-size: 10px;
+    cursor: pointer;
+    width: 15px;
+    height: 20px;
+}
+
+#checkbox-label {
+    position: relative;
+    bottom: 20px;
+    cursor: pointer;
+    color: #2D5966;
+}
+
+.btn {
     width: 100%;
     text-align: center;
 }
 
-#btn-enviar{
-    position:relative;
-    bottom:45px;
-}
-
-form input[type=submit]{
+.btn input {
     padding: 10px 40px;
     border: 0;
     border-radius: 10px;
@@ -117,89 +155,97 @@ form input[type=submit]{
     font-size: 14pt;
     cursor: pointer;
     width: 100%;
-    position: relative;
-    bottom: 0px;
+    transition: background 0.3s ease;
 }
 
-/*Error e Sucesso*/
-
-.input-single.success input{
-    border-bottom: 2px solid #2ecc71;
+.btn input:hover {
+    background-color: #1B404E;
 }
 
-.input-single.error input{
-    border-bottom: 2px solid #e74c3c;
+/* Responsividade */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    form {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    form h1 {
+        font-size: 20pt;
+    }
+
+    form p {
+        font-size: 14px;
+    }
+
+    .input-single {
+        height: auto;
+    }
+
+    .input-single label {
+        bottom: 40px;
+    }
+
+    .btn input {
+        font-size: 16px;
+        padding: 8px 20px;
+    }
 }
 
-.input-single.success i.fa-circle-check{
-    color:#2ecc71;
-    visibility: visible;
+@media ( min-width:415px ) and ( max-width: 480px ) {
+    form h1 {
+        font-size: 18pt;
+    }
+
+    .input-single i {
+        bottom:65px;
+    }
+
+    .input-single.error small {
+        top: -27px;
+    }
+
+    form p {
+        font-size: 12px;
+    }
+
+    .input-single label {
+        font-size: 14px;
+        bottom: 48px;
+    }
+
+    .input-single .input {
+        font-size: 14px;
+    }
+
+    .btn input {
+        font-size: 14px;
+        padding: 6px 16px;
+    }
 }
 
-.input-single.error i.fa-circle-exclamation{
-    color:#e74c3c;
-    visibility: visible;
+@media (max-width: 415px){
+
+    .input-single i {
+        display:none;
+    }
+
+    .input-single label {
+         bottom: 55px;
+    }
+
 }
 
-.input-single.error small{
-    visibility: visible;
-    color:#e74c3c;
-    position: relative;
-    top: -35px;
-    font-size: 16px;
-    display: flex;
-    justify-content: center;
+@media (min-width: 535px) and (max-width:769px){
+    .input-single i {
+        display:none;
+    }
+    
+    .input-single label {
+        font-size: 14px;
+        bottom: 50px;
+    }
 }
-
-#genero{
-    font-size: 18px;
-    position:absolute;
-    bottom:50px;
-    color:#2D5966;
-}
-
-.form-control{
-    cursor: pointer;
-    position: absolute;
-    bottom: 15px;
-}
-
-/*Checkbox*/
-
-#checkbox{
-    position:relative;
-    bottom:15px;
-    font-size: 10px;
-    cursor:pointer;
-    width: 15px;
-    height: 15px;
-}
-
-#checkbox-label{
-    position: relative;
-    bottom:15px;
-    cursor:pointer;
-    color:#2D5966;
-}
-
-#mensagemErro{
-    color:#e74c3c;
-    visibility: hidden;
-    bottom: 80px;
-    position: relative;
-}
-
-#checkbox-small{
-    position: absolute;
-    display: flex;
-    top: 7px;
-    left:40px;
-}
-
-/*Button*/
-
-.btn input{
-    position:relative;
-    bottom:37px;
-}
-
