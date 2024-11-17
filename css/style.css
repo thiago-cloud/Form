@@ -8,7 +8,7 @@
 body {
     width: 100vw;
     max-height: 250vh;
-    background-image: url(/Forms/images/wallpaperMundo.webp);
+    background-image: url(/images/wallpaperMundo.webp);
     background-color: #2ecc71;
     background-position: center;
     background-repeat: no-repeat;
